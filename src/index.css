@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.celtic-cross-layout {
+  @apply grid grid-cols-7 gap-4 justify-center items-center;
+  grid-template-areas:
+    ". . . . . area10 ."
+    ". . area3 . . area9 ."
+    ". area5 area1 area2 area6 area8 ."
+    ". . area4 . . area7 ."
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . . . . .";
+}
+
+.position {
+  @apply border border-black text-center cursor-pointer;
+  width: 63mm;
+  height: 88mm;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.position-1 { grid-area: area1; }
+.position-2 { grid-area: area2; }
+.position-3 { grid-area: area3; }
+.position-4 { grid-area: area4; }
+.position-5 { grid-area: area5; }
+.position-6 { grid-area: area6; }
+.position-7 { grid-area: area7; }
+.position-8 { grid-area: area8; }
+.position-9 { grid-area: area9; }
+.position-10 { grid-area: area10; }
+
+.card-display img {
+  @apply max-w-full;
+}
+
+.card-info img {
+  @apply max-w-full;
+}
+
+.card-info {
+  @apply text-center p-4;
+}
