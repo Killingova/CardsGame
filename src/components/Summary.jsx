@@ -12,6 +12,8 @@ const Summary = ({ positions, positionsInfo }) => {
             <div>
               <p><strong>Karte:</strong> {position.card.name}</p>
               <p><strong>Deutung:</strong> {position.card.meaning}</p>
+              <p><strong>Meditation</strong>{position.card.meditation}</p>
+              <p><strong>Tipps</strong>{position.card.tips}</p>
             </div>
           ) : (
             <p>Keine Karte gezogen</p>
